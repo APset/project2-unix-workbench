@@ -2,7 +2,7 @@
 # File: guessinggame.sh
 	
 	flag=0
-        number_files=$(ls . | wc -l)
+        number_files=$(ls . -p | grep -v / | wc -l)
 
 	function compa {
                 if [[ response -eq number_files ]]
